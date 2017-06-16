@@ -100,7 +100,7 @@ class shify:
     tocontinue = name =="__main__" or cli=="allways"
     if not tocontinue:
         return func
-    _shify(func, *self.args, **self.kwargs)
+    _clipy(func, *self.args, **self.kwargs)
 
 def _shify(f, 
         string='', 
@@ -177,7 +177,7 @@ def demo_2(g=6, h=7):
     print g,h
 
 
-@shify(name=__name__,
+@shift(name=__name__,
        includes=[demo_2],
        usage="A py2sh demo")
 def py2sh_demo(a, b, c=1, d= 2,*args, **kwargs):

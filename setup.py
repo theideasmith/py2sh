@@ -9,7 +9,7 @@ setup(
   author_email = 'aclscientist@gmail.com',
   entry_points={
       'console_scripts':[
-          "py2sh=bashpy:bashpy_demo"
+          "py2sh=py2sh:py2sh_demo"
        ]
   },
   url = 'https://github.com/theideasmith/py2sh', # use the URL to the github repo
