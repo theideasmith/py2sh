@@ -1,11 +1,10 @@
-import clipy as clipy
+import py2sh as py2sh
 
-@clipy.clipy(name=__name__)
+@py2sh.shify(
+       name=__name__,
+       usage="Connect to your mongodb database")                         
 def dbconnect(
     name,
-    func_usage="""
-    Connect to your mongodb database
-    """,
     pids=[],
     port=8080,
     nodename="",
